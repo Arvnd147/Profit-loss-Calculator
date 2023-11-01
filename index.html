@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Profit and Loss calculator</h1>
+        <!--<button onclick="showMessage()">Click Me</button>-->
+        <!--https://everydaycalculation.com/profit-loss.php-->
+        <form id="profitLossForm">
+            <label for="sp">Selling Price</label>
+            <input type="number" name="sp" id="sp" placeholder="Enter Selling Price"><br>
+
+            <label for="cp">Cost Price</label>
+            <input type="number" name="cp" id="cp" placeholder="Enter Cost Price"><br>
+
+            <button type="button" onclick="calProfit()">Calculate</button>
+        </form>
+        <div class="result">
+            <p id="resultText" class="result-text"></p>
+            <p id="profitLoss" class="result-text"></p>
+            <img src="./assets/profit.png" alt="profit-image" id="profitImage" style="display: none;">
+            <img src="./assets/loss.png" alt="loss-image" id="lossImage" style="display: none;">
+            <img src="./assets/noProfitLoss.jpeg" alt="no-profit-no-loss" id="noPL" style="display: none;">
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Aravind S - 21MID0229 &copy;</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
